@@ -1,17 +1,11 @@
-package Main;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+package main;
+import javax.swing.JFrame;
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
-
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+       JFrame window =  new JFrame("Simple Chess");
+       window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       window.setResizable(false);
+       window.setLocationRelativeTo(null);
+       window.setVisible(true);
     }
 }
