@@ -20,6 +20,6 @@ public class GamePanel extends JPanel
     {
         super.paintComponent(g);
         g.drawString("This is my custom pamnel!!", 10, 20);
-        redSquare
+//        redSquare.paintSquare(g);
     }
 }
