@@ -8,8 +8,8 @@ public class Main {
         GamePanel gp = new GamePanel();
         window.add(gp);
         window.pack();
-       window.setLocationRelativeTo(null);
-       window.setVisible(true);
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
 
     }
 }
