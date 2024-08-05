@@ -12,5 +12,18 @@ public class GamePanel extends JPanel
         setPreferredSize(new Dimension(width, height));
         setBackground(Color.BLACK);
     }
+<<<<<<< HEAD
 
+=======
+    private void Update()
+    {
+
+    }
+    public void paintComponent(Graphics g)
+    {
+        super.paintComponent(g);
+        g.drawString("This is my custom pamnel!!", 10, 20);
+        redSquare
+    }
+>>>>>>> b6347584650bf8095fa1ff6e868299ea38e242cb
 }
