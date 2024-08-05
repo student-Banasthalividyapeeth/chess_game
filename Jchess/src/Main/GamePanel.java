@@ -1,6 +1,6 @@
 package main;
-import javax.swing.JPanel;
 import java.awt.*;
+import javax.swing.JPanel;
 
 public class GamePanel extends JPanel
 {
@@ -12,6 +12,7 @@ public class GamePanel extends JPanel
         setPreferredSize(new Dimension(width, height));
         setBackground(Color.BLACK);
     }
+    @Override
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
