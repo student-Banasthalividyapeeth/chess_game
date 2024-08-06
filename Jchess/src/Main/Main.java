@@ -11,5 +11,7 @@ public class Main {
         window.setLocationRelativeTo(null);
         window.setVisible(true);
 
+        gp.launchGame();git
+
     }
 }
