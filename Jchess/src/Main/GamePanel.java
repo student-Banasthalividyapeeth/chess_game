@@ -12,6 +12,9 @@ public class GamePanel extends JPanel
         setPreferredSize(new Dimension(width, height));
         setBackground(Color.BLACK);
     }
+    private void update(){
+        
+    }
     @Override
     public void paintComponent(Graphics g)
     {
