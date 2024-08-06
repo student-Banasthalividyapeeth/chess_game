@@ -18,8 +18,24 @@ public class GamePanel extends JPanel implements Runnable
         gameThread = new Thread(this);
         gameThread.start();
     }
-    public void run(){
-
+    public void run()
+    {
+            double drawInterval = 1000000000 / FPS;
+            double delta = 0;
+            double lastTime = System.nanoTime();
+            double currentTime = System.nanoTime();
+            while(gameThread != null)
+            {
+                currentTime = System.nanoTime();
+                delta += (currentTime - lastTime) / drawInterval;
+                lastTime = currentTime;
+                if(delta >= 1)
+                {
+                    update();
+                    repaint();
+                    delta--;
+                }
+            }
     }
     private void update(){
 
@@ -29,7 +45,7 @@ public class GamePanel extends JPanel implements Runnable
     {
         super.paintComponent(g);
         g.drawString("This is my custom pamnel!!", 10, 20);
-
     }
+
 
 }
